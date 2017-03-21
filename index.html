@@ -1,30 +1,118 @@
-<!doctype html>
-<head>
-  <title>Portfolio Page</title>
-  <link href="style.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="script.js"></script>
-</head>
-<body>
-  <header>
-    <img id="profile" src="images/scripted_logo_orange.png">
-    <h1>Shreya's Portfolio</h1>
-    <ul>
-      <li><a class="nav" href="">Home</a></li>
-      <li><a class="nav" href="">About</a></li>
-      <li><a class="nav" href="">Contact Shreya Banda</a></li>
-    </ul>
-  </header>
-  <div class="project">
-    <h2 class="project-title"> <a href="">hi </a></h2>
-    <p>nope </p>
-    <button>Like</button>
-    <p id="like"></p>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>SHREYA<br>BANDA</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+  
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="blah.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+      <img src="blah.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+      <img src="blah.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+    </div>
+
+    <div class="w3-third">
+      <img src="blah.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+      <img src="blah.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+      <img src="blah.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+    </div>
+    
+    <div class="w3-third">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="subtitle">
+    </div>
   </div>
-<div class="project">
-    <h2 class="project-title"> <a href="">fun</a></h2>
-    <p>ok s</p>
-    <button>Like</button>
-    <p id="like"></p>
+
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
   </div>
+  
+  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="/w3images/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Shreya Banda</h4>
+      <p>Some text about me
+      <p>email: sbanda321@gmail.com</p>
+      <p>tel: 7347308160</p>
+      <hr class="w3-opacity">
+     
+  
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>CONTACT ME!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-group">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-group">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-group">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+  
+    
+          </li> 
+        </ul>
+      </div>
+
+     
+      </div>
+    </div>
+  </footer>
+  
+</div>
 </body>
+</html>
